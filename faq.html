@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Приобрести лицензионные ключи активации">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/js/tabby.polyfills.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Популярные вопросы</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__group"><a class="header__logo-link" href="index.html" aria-label="Главная"><img class="header__logo" src="images/common/logo.png" width="80" height="80" alt="activate.by"></a>
+            <button class="burger" id="burger" aria-label="Бургер-меню"><span></span></button>
+            <form class="header__search" name="search" method="GET" action="#">
+              <input class="header__search-input" name="search-input" type="text" placeholder="Поиск" required>
+              <button class="header__search-button" aria-label="Поиск">
+                    <svg class="header__search-icon">
+                      <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+              </button>
+            </form>
+          </div>
+          <div class="header__group">
+            <nav class="header__menu" id="menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item"><a class="header__menu-link" href="catalog.html">Каталог</a>
+                      <svg class="header__menu-arrow">
+                        <use xlink:href="images/sprite.svg#arrow-down"></use>
+                      </svg>
+                  <ul class="header__menu-sublist">
+                        <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="/catalog.html">Антивирусы</a></li>
+                        <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">Офисные программы</a></li>
+                        <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">ОС</a></li>
+                        <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">Работа с текстом</a></li>
+                        <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">Работа с файлами</a></li>
+                        <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">Графика и дизайн</a></li>
+                        <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">Образование и наука</a></li>
+                  </ul>
+                </li>
+                <li class="header__menu-item"><a class="header__menu-link" href="about.html">О нас</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="faq.html">FAQ</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#contacts">Контакты</a></li>
+              </ul>
+            </nav>
+            <button class="header__cart" id="cart-button" aria-label="Корзина" data-modal-target="cart">
+                  <svg class="header__cart-icon">
+                    <use xlink:href="images/sprite.svg#cart"></use>
+                  </svg><span class="header__cart-count">1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page">
+      <main>
+        <!--FAQ-->
+        <section class="faq">
+          <div class="container">
+            <div class="faq__inner">
+              <div class="faq__content">
+                <h2 class="faq__content-title">Популярные вопросы</h2>
+                    <ul class="filters container" id="filter">
+                      <li class="filters__item">
+                        <button class="filters__button" data-filter-target="all">Все</button>
+                      </li>
+                      <li class="filters__item">
+                        <button class="filters__button" data-filter-target="about">О магазине</button>
+                      </li>
+                      <li class="filters__item">
+                        <button class="filters__button" data-filter-target="duty">Обязательства</button>
+                      </li>
+                      <li class="filters__item">
+                        <button class="filters__button" data-filter-target="buy">Совершённые покупки</button>
+                      </li>
+                      <li class="filters__item">
+                        <button class="filters__button" data-filter-target="different">Разное</button>
+                      </li>
+                    </ul>
+                    <div class="accordion" id="accordion">
+                      <details class="accordion__details" data-filter="duty">
+                        <summary class="accordion__summary"><span>Какие гарантии вы предоставляете?</span>
+                              <svg class="accordion__summary-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                              </svg>
+                              <svg class="accordion__summary-icon accordion__summary-icon--active">
+                                <use xlink:href="images/sprite.svg#minus"></use>
+                              </svg>
+                        </summary>
+                        <div class="accordion__txt">
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, eum fugit obcaecati ipsum recusandae error neque maxime modi velit, inventore unde magnam magni eligendi eaque necessitatibus accusamus alias aperiam dignissimos.</p>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, eum fugit obcaecati ipsum.</p>
+                        </div>
+                      </details>
+                      <details class="accordion__details" data-filter="about">
+                        <summary class="accordion__summary"><span>Вы онлайн-магазин?</span>
+                              <svg class="accordion__summary-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                              </svg>
+                              <svg class="accordion__summary-icon accordion__summary-icon--active">
+                                <use xlink:href="images/sprite.svg#minus"></use>
+                              </svg>
+                        </summary>
+                        <div class="accordion__txt">
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, eum fugit obcaecati ipsum recusandae error neque maxime modi velit, inventore unde magnam magni eligendi eaque necessitatibus accusamus alias aperiam dignissimos.</p>
+                        </div>
+                      </details>
+                      <details class="accordion__details" data-filter="buy">
+                        <summary class="accordion__summary"><span>После оплаты не приходит ключ активации</span>
+                              <svg class="accordion__summary-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                              </svg>
+                              <svg class="accordion__summary-icon accordion__summary-icon--active">
+                                <use xlink:href="images/sprite.svg#minus"></use>
+                              </svg>
+                        </summary>
+                        <div class="accordion__txt">
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, eum fugit obcaecati ipsum recusandae error neque maxime modi velit, inventore unde magnam magni eligendi eaque necessitatibus accusamus alias aperiam dignissimos.</p>
+                        </div>
+                      </details>
+                      <details class="accordion__details" data-filter="different">
+                        <summary class="accordion__summary"><span>Как обновить программу, если давно её не запускал</span>
+                              <svg class="accordion__summary-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                              </svg>
+                              <svg class="accordion__summary-icon accordion__summary-icon--active">
+                                <use xlink:href="images/sprite.svg#minus"></use>
+                              </svg>
+                        </summary>
+                        <div class="accordion__txt">
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, eum fugit obcaecati ipsum recusandae error neque maxime modi velit, inventore unde magnam magni eligendi eaque necessitatibus accusamus alias aperiam dignissimos.</p>
+                        </div>
+                      </details>
+                      <details class="accordion__details" data-filter="duty">
+                        <summary class="accordion__summary"><span>Какие гарантии вы предоставляете?</span>
+                              <svg class="accordion__summary-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                              </svg>
+                              <svg class="accordion__summary-icon accordion__summary-icon--active">
+                                <use xlink:href="images/sprite.svg#minus"></use>
+                              </svg>
+                        </summary>
+                        <div class="accordion__txt">
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, eum fugit obcaecati ipsum recusandae error neque maxime modi velit, inventore unde magnam magni eligendi eaque necessitatibus accusamus alias aperiam dignissimos.</p>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, eum fugit obcaecati ipsum.</p>
+                        </div>
+                      </details>
+                      <details class="accordion__details" data-filter="about">
+                        <summary class="accordion__summary"><span>Вы онлайн-магазин?</span>
+                              <svg class="accordion__summary-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                              </svg>
+                              <svg class="accordion__summary-icon accordion__summary-icon--active">
+                                <use xlink:href="images/sprite.svg#minus"></use>
+                              </svg>
+                        </summary>
+                        <div class="accordion__txt">
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, eum fugit obcaecati ipsum recusandae error neque maxime modi velit, inventore unde magnam magni eligendi eaque necessitatibus accusamus alias aperiam dignissimos.</p>
+                        </div>
+                      </details>
+                      <details class="accordion__details" data-filter="buy">
+                        <summary class="accordion__summary"><span>После оплаты не приходит ключ активации</span>
+                              <svg class="accordion__summary-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                              </svg>
+                              <svg class="accordion__summary-icon accordion__summary-icon--active">
+                                <use xlink:href="images/sprite.svg#minus"></use>
+                              </svg>
+                        </summary>
+                        <div class="accordion__txt">
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, eum fugit obcaecati ipsum recusandae error neque maxime modi velit, inventore unde magnam magni eligendi eaque necessitatibus accusamus alias aperiam dignissimos.</p>
+                        </div>
+                      </details>
+                      <details class="accordion__details" data-filter="different">
+                        <summary class="accordion__summary"><span>Как обновить программу, если давно её не запускал</span>
+                              <svg class="accordion__summary-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                              </svg>
+                              <svg class="accordion__summary-icon accordion__summary-icon--active">
+                                <use xlink:href="images/sprite.svg#minus"></use>
+                              </svg>
+                        </summary>
+                        <div class="accordion__txt">
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, eum fugit obcaecati ipsum recusandae error neque maxime modi velit, inventore unde magnam magni eligendi eaque necessitatibus accusamus alias aperiam dignissimos.</p>
+                        </div>
+                      </details>
+                    </div>
+              </div>
+                  <div class="faq__descrip">
+                    <h2 class="faq__descrip-title">Не нашли ответ?</h2>
+                    <p>Проверьте раздел<a class="faq__descrip-link" href="#">FAQ</a>или напишите нам на почту. Мы обязательно вам поможем.</p>
+                  </div>
+            </div>
+          </div>
+        </section>
+        <!--Contacts-->
+            <section class="contacts" id="contacts">
+              <div class="container">
+                <h2 class="contacts__title">Наши контакты</h2>
+                <ul class="contacts__list">
+                  <li class="contacts__item"><a class="contacts__item-link" href="mailto:ptseraev@gmail.com">ptseraev@gmail.com</a></li>
+                  <li class="contacts__item"><a class="contacts__item-link" href="tel:+375296816200">+375 29 681 62 00</a></li>
+                  <li class="contacts__item"><a class="contacts__item-link" href="tel:+375447224231">+375 44 722 42 31</a></li>
+                  <li class="contacts__item"><a class="contacts__item-link" href="https://yandex.ru/maps/?um=constructor%3A5f20e6203c6128edc99146fcd6dec8429ec326c3a57851abc291a83163331df5&amp;source=constructorLink" rel="noopener" target="_blank">Беларусь, Минская область, Жодино, Советская улица, 22А</a></li>
+                </ul>
+              </div>
+            </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__info">
+              <p>ИП Теряев Павел Иванович УНП691733898 св-во 0728699 выдано Жодинским Исполкомом 24 апреля.</p>
+              <p>Сайт activate.by зарегистрирован в Торговом реестре РБ №494412</p>
+            </div>
+                <svg class="footer__icon">
+                  <use xlink:href="images/sprite.svg#pay"></use>
+                </svg>
+          </div>
+        </div>
+      </footer>
+    </div>
+        <div class="cart modal" id="cart">
+          <div class="cart__order">
+            <button class="cart__button-close" aria-label="Закрыть" data-modal-close>
+                  <svg class="cart__button-close-icon">
+                    <use xlink:href="images/sprite.svg#close"></use>
+                  </svg>
+            </button>
+            <h3 class="cart__title">Состав заказа</h3>
+            <ul class="cart__order-list">
+              <li class="cart__order-item">
+                <div class="cart__order-item-info"><a class="cart__order-item-link" href="product.html" aria-label="Страница товара"></a><img class="cart__order-item-img" src="images/products/kaspersky/kaspersky-1.png" width="80" height="80" alt="">
+                  <h4 class="cart__order-item-title">Kaspersky Total Security (1 год)</h4>
+                </div>
+                    <div class="product-counter">
+                      <div class="product-counter__group">
+                        <button class="product-counter__control minus" aria-label="Отнять">-</button>
+                        <p class="product-counter__count count">1</p>
+                        <button class="product-counter__control plus" aria-label="Прибавить">+</button>
+                      </div>
+                      <p class="product-counter__price">53.55 BYN</p>
+                    </div>
+              </li>
+              <li class="cart__order-item">
+                <div class="cart__order-item-info"><a class="cart__order-item-link" href="product.html" aria-label="Страница товара"></a><img class="cart__order-item-img" src="images/products/windows/windows7.png" width="80" height="80" alt="">
+                  <h4 class="cart__order-item-title">Лицензионный ключ активации для Windows 10 Home (Домашняя)</h4>
+                </div>
+                    <div class="product-counter">
+                      <div class="product-counter__group">
+                        <button class="product-counter__control minus" aria-label="Отнять">-</button>
+                        <p class="product-counter__count count">1</p>
+                        <button class="product-counter__control plus" aria-label="Прибавить">+</button>
+                      </div>
+                      <p class="product-counter__price">53.55 BYN</p>
+                    </div>
+              </li>
+            </ul>
+          </div>
+          <div class="cart__total">
+            <h3 class="cart__title cart__title--marginless">Итого</h3>
+            <p class="cart__total-sum" id="cart-price-total">50 BYN</p>
+          </div>
+          <p class="cart__descrip">Вы получите ключи активации СРАЗУ после оплаты в виде сообщения на телефон и электронную почту!</p>
+          <h3 class="cart__title">Контактные данные</h3>
+          <form class="cart__form" id="form-cart" name="Оплата" action="#" method="POST">
+            <div class="cart__form-control"><span class="cart__form-error"></span>
+              <input class="cart__form-input" name="order-phone" type="tel" placeholder="Номер телефона" data-form-phone>
+            </div>
+            <div class="cart__form-control"><span class="cart__form-error"></span>
+              <input class="cart__form-input" name="order-email" type="text" placeholder="e-mail" data-form-email>
+            </div>
+            <button class="cart__form-submit">Оплатить</button>
+          </form>
+        </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="scripts/main.min.js"></script>
+  </body>
+</html>
