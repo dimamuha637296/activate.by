@@ -1844,12 +1844,14 @@ body {
     position: absolute;
     left: 29px;
     top: 29px;
+    min-width: 52px;
     padding: 11px 10px;
     text-transform: uppercase;
     color: #fff;
     font-weight: 500;
     font-size: 12px;
     letter-spacing: .5px;
+    text-align: center;
     border-radius: 4px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -1966,6 +1968,73 @@ body {
     height: 20px;
     vertical-align: -5px;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE4Ljk3MjYgNy43NTM5MUMxOC41NTQ3IDcuMjMwNDcgMTcuOTg0NCA2Ljk0MTQxIDE3LjM2NzIgNi45NDE0MUgxNS45NTdDMTUuODI0MiAzLjMyNDIyIDEzLjIwMzEgMC40Mjk2ODggOS45OTk5OCAwLjQyOTY4OEM2Ljc5Njg2IDAuNDI5Njg4IDQuMTc1NzcgMy4zMjQyMiA0LjA0Mjk1IDYuOTQxNDFIMi42MzI4QzIuMDE1NjEgNi45NDE0MSAxLjQ0NTMgNy4yMzA0NyAxLjAyNzMzIDcuNzUzOTFDMC40OTk5ODUgOC40MTAxNiAwLjMwODU3OCA5LjMyNDIyIDAuNTA3Nzk3IDEwLjIwMzFMMi4xOTkyIDE3LjY1NjJDMi40NTMxMSAxOC43ODEyIDMuMzI4MTEgMTkuNTcwMyA0LjMyNDIgMTkuNTcwM0gxNS42NzE5QzE2LjY2OCAxOS41NzAzIDE3LjU0MyAxOC43ODUyIDE3Ljc5NjkgMTcuNjU2MkwxOS40OTIyIDEwLjIwMzFDMTkuNjkxNCA5LjMyNDIyIDE5LjUgOC40MTAxNiAxOC45NzI2IDcuNzUzOTFaTTkuOTk5OTggMi4wMjM0NEMxMi4zMjgxIDIuMDIzNDQgMTQuMjM0NCA0LjIwMzEyIDE0LjM1OTQgNi45NDE0MUg1LjY0MDYxQzUuNzY1NjEgNC4yMDcwMyA3LjY3MTg2IDIuMDIzNDQgOS45OTk5OCAyLjAyMzQ0Wk0xNy45Mzc1IDkuODQ3NjZMMTYuMjQ2MSAxNy4zMDQ3QzE2LjE2MDEgMTcuNjg3NSAxNS45MTQgMTcuOTc2NiAxNS42NzU4IDE3Ljk3NjZINC4zMjQyQzQuMDg1OTIgMTcuOTc2NiAzLjgzOTgzIDE3LjY4NzUgMy43NTM4OSAxNy4zMDQ3TDIuMDYyNDggOS44NDc2NkMxLjk3MjY0IDkuNDUzMTIgMS45MTc5NSA4LjUzNTE2IDIuNjMyOCA4LjUzNTE2SDE3LjM2NzJDMTguMTM2NyA4LjUzNTE2IDE4LjAyNzMgOS40NTMxMiAxNy45Mzc1IDkuODQ3NjZaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNi4wNDI5NyAxMC4xMjExQzUuNjAxNTYgMTAuMTIxMSA1LjI0NjA5IDEwLjQ3NjYgNS4yNDYwOSAxMC45MThWMTUuODk4NEM1LjI0NjA5IDE2LjMzOTggNS42MDE1NiAxNi42OTUzIDYuMDQyOTcgMTYuNjk1M0M2LjQ4NDM3IDE2LjY5NTMgNi44Mzk4NCAxNi4zMzk4IDYuODM5ODQgMTUuODk4NFYxMC45MThDNi44NDM3NSAxMC40ODA1IDYuNDg0MzcgMTAuMTIxMSA2LjA0Mjk3IDEwLjEyMTFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNOS45MDYyNiAxMC4xMjExQzkuNDY0ODUgMTAuMTIxMSA5LjEwOTM4IDEwLjQ3NjYgOS4xMDkzOCAxMC45MThWMTUuODk4NEM5LjEwOTM4IDE2LjMzOTggOS40NjQ4NSAxNi42OTUzIDkuOTA2MjYgMTYuNjk1M0MxMC4zNDc3IDE2LjY5NTMgMTAuNzAzMSAxNi4zMzk4IDEwLjcwMzEgMTUuODk4NFYxMC45MThDMTAuNzAzMSAxMC40ODA1IDEwLjM0MzggMTAuMTIxMSA5LjkwNjI2IDEwLjEyMTFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTMuNzY1NiAxMC4xMjExQzEzLjMyNDIgMTAuMTIxMSAxMi45Njg4IDEwLjQ3NjYgMTIuOTY4OCAxMC45MThWMTUuODk4NEMxMi45Njg4IDE2LjMzOTggMTMuMzI0MiAxNi42OTUzIDEzLjc2NTYgMTYuNjk1M0MxNC4yMDcgMTYuNjk1MyAxNC41NjI1IDE2LjMzOTggMTQuNTYyNSAxNS44OTg0VjEwLjkxOEMxNC41NjI1IDEwLjQ4MDUgMTQuMjA3IDEwLjEyMTEgMTMuNzY1NiAxMC4xMjExWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.catalog-items {
+
+}
+
+.catalog-items .products__items-col {
+
+}
+
+@media (max-width: 1219.98px) {
+    .catalog-items .products__items-col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .catalog-items .products__items-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.catalog-items .products__item {
+    padding: 20px;
+}
+
+.catalog-items .products__item-mark {
+    left: 19px;
+    top: 19px;
+}
+
+.catalog-items .products__item-img {
+    max-height: 200px;
+    margin-bottom: 20px;
+}
+
+.catalog-items .products__item-title {
+    font-size: 16px;
+}
+
+.catalog-items .products__item-price {
+    margin-bottom: 0;
+}
+
+.catalog-items .products__item-price-usual,
+.catalog-items .products__item-price-sale {
+    font-size: 18px;
+}
+
+.catalog-items .products__item--sale .products__item-price-usual {
+    font-size: 14px;
+}
+
+.catalog-items .products__item-btn {
+    padding: 12.5px 15.5px;
+    font-size: 14px;
+    SSSSSAAA
+}
+
+.catalog-items .products__item-btn .icon:before {
+    width: 16px;
+    height: 16px;
 }
 
 .bonds {
@@ -2304,6 +2373,12 @@ body {
     background: #fff;
     min-width: 31rem;
     margin-right: 20px
+}
+
+@media only screen and (max-width: 991.98px) {
+    .catalog__filters {
+        min-width: 22rem;
+    }
 }
 
 @media only screen and (max-width: 767.98px) {
