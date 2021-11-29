@@ -677,6 +677,23 @@ body {
     text-align: center
 }
 
+.header__tel {
+    margin-right: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .header__tel {
+        display: none;
+    }
+}
+
+.header__tel a {
+    font-size: 14px;
+    letter-spacing: 0.583333px;
+    color: #212121;
+}
+
 .footer {
     background: #212121;
     padding: 2.4rem 0

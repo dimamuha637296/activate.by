@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="description" content="Приобрести лицензионные ключи активации">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -20,177 +20,203 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/js/tabby.polyfills.min.js"></script>
     <link rel="stylesheet" href="css/style.min.css">
     <title>О нас</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
+</head>
+<body>
+<header class="header">
+    <div class="container">
         <div class="header__inner">
-          <div class="header__group"><a class="header__logo-link" href="index.html" aria-label="Главная"><img class="header__logo" src="images/common/logo.png" width="80" height="80" alt="activate.by"></a>
-            <button class="burger" id="burger" aria-label="Бургер-меню"><span></span></button>
-            <form class="header__search" name="search" method="GET" action="#">
-              <input class="header__search-input" name="search-input" type="text" placeholder="Поиск" required>
-              <button class="header__search-button" aria-label="Поиск">
-                    <svg class="header__search-icon">
-                      <use xlink:href="images/sprite.svg#search"></use>
+            <div class="header__group">
+                <a class="header__logo-link" href="index.html" aria-label="Главная"><img class="header__logo" src="images/common/logo.png" width="80" height="80" alt="activate.by"></a>
+                <button class="burger" id="burger" aria-label="Бургер-меню"><span></span></button>
+                <form class="header__search" name="search" method="GET" action="#">
+                    <input class="header__search-input" name="search-input" type="text" placeholder="Поиск" required>
+                    <button class="header__search-button" aria-label="Поиск">
+                        <svg class="header__search-icon">
+                            <use xlink:href="images/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="header__group">
+                <div class="header__tel">
+                    <a href="tel:+375296816200">+375 (29) 681-62-00</a>
+                </div>
+                <nav class="header__menu" id="menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a class="header__menu-link" href="catalog.html">Каталог</a>
+                            <svg class="header__menu-arrow">
+                                <use xlink:href="images/sprite.svg#arrow-down"></use>
+                            </svg>
+                            <ul class="header__menu-sublist">
+                                <li class="header__menu-subitem">
+                                    <a class="category-link header__menu-sublink" href="/catalog.html">Антивирусы</a>
+                                </li>
+                                <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">Офисные
+                                    программы</a></li>
+                                <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">ОС</a>
+                                </li>
+                                <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">Работа
+                                    с текстом</a></li>
+                                <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">Работа
+                                    с файлами</a></li>
+                                <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">Графика
+                                    и дизайн</a></li>
+                                <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">Образование
+                                    и наука</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="about.html">О нас</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="faq.html">FAQ</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="header__cart" id="cart-button" aria-label="Корзина" data-modal-target="cart">
+                    <svg class="header__cart-icon">
+                        <use xlink:href="images/sprite.svg#cart"></use>
                     </svg>
-              </button>
-            </form>
-          </div>
-          <div class="header__group">
-            <nav class="header__menu" id="menu">
-              <ul class="header__menu-list">
-                <li class="header__menu-item"><a class="header__menu-link" href="catalog.html">Каталог</a>
-                      <svg class="header__menu-arrow">
-                        <use xlink:href="images/sprite.svg#arrow-down"></use>
-                      </svg>
-                  <ul class="header__menu-sublist">
-                        <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="/catalog.html">Антивирусы</a></li>
-                        <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">Офисные программы</a></li>
-                        <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">ОС</a></li>
-                        <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">Работа с текстом</a></li>
-                        <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">Работа с файлами</a></li>
-                        <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">Графика и дизайн</a></li>
-                        <li class="header__menu-subitem"><a class="category-link header__menu-sublink" href="#">Образование и наука</a></li>
-                  </ul>
-                </li>
-                <li class="header__menu-item"><a class="header__menu-link" href="about.html">О нас</a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="faq.html">FAQ</a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="#contacts">Контакты</a></li>
-              </ul>
-            </nav>
-            <button class="header__cart" id="cart-button" aria-label="Корзина" data-modal-target="cart">
-                  <svg class="header__cart-icon">
-                    <use xlink:href="images/sprite.svg#cart"></use>
-                  </svg><span class="header__cart-count">1</span>
-            </button>
-          </div>
+                    <span class="header__cart-count">1</span>
+                </button>
+            </div>
         </div>
-      </div>
-    </header>
-    <div class="page">
-      <main>
+    </div>
+</header>
+<div class="page">
+    <main>
         <!--About-->
         <section class="about">
-          <div class="container">
-            <div class="about__inner">
-              <div class="about__info">
-                <h2 class="about__info-title">О нас</h2>
-                <div class="about__txt">
-                  <p>Наш магазин с 2019 года осуществляет продажу оригинальных кодов и ключей активации - для операционных систем, офисных продуктов, антивирусных программ, и других товаров.</p>
-                  <p>Магазин популярен своими низкими ценами и всевозможными скидками на товары, которые непременно Вас обрадуют и сохранят часть Вашего бюджета. Мы являемся официальным партнером сервиса Oplata.Info (Digiseller.ru).</p>
-                  <p>Также мы сотрудничаем с официальными партнерами Microsoft и представителями различных антивирусных компаний.</p>
-                </div><img class="about__img" src="images/about/about.png" width="860" height="485" alt="">
-              </div>
-              <div class="about__features">
-                <h2 class="about__features-title">О нас в цифрах</h2>
-                <ul class="about__list">
-                  <li class="about__item">
-                        <svg class="about__item-icon">
-                          <use xlink:href="images/sprite.svg#cart"></use>
-                        </svg>
-                    <h3 class="about__item-title">Проданно в розницу</h3>
-                    <p class="about__item-number about__item-number--sale">1 289</p>
-                  </li>
-                  <li class="about__item">
-                        <svg class="about__item-icon">
-                          <use xlink:href="images/sprite.svg#smile"></use>
-                        </svg>
-                    <h3 class="about__item-title">Положительных отзывов</h3>
-                    <p class="about__item-number about__item-number--positive">356</p>
-                  </li>
-                  <li class="about__item">
-                        <svg class="about__item-icon">
-                          <use xlink:href="images/sprite.svg#sad"></use>
-                        </svg>
-                    <h3 class="about__item-title">Отрицательных отзывов</h3>
-                    <p class="about__item-number about__item-number--negative">0</p>
-                  </li>
-                </ul>
-              </div>
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__info">
+                        <h2 class="about__info-title">О нас</h2>
+                        <div class="about__txt">
+                            <p>Наш магазин с 2019 года осуществляет продажу оригинальных кодов и ключей активации - для
+                                операционных систем, офисных продуктов, антивирусных программ, и других товаров.</p>
+                            <p>Магазин популярен своими низкими ценами и всевозможными скидками на товары, которые
+                                непременно Вас обрадуют и сохранят часть Вашего бюджета. Мы являемся официальным
+                                партнером сервиса Oplata.Info (Digiseller.ru).</p>
+                            <p>Также мы сотрудничаем с официальными партнерами Microsoft и представителями различных
+                                антивирусных компаний.</p>
+                        </div>
+                        <img class="about__img" src="images/about/about.png" width="860" height="485" alt="">
+                    </div>
+                    <div class="about__features">
+                        <h2 class="about__features-title">О нас в цифрах</h2>
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <svg class="about__item-icon">
+                                    <use xlink:href="images/sprite.svg#cart"></use>
+                                </svg>
+                                <h3 class="about__item-title">Проданно в розницу</h3>
+                                <p class="about__item-number about__item-number--sale">1 289</p>
+                            </li>
+                            <li class="about__item">
+                                <svg class="about__item-icon">
+                                    <use xlink:href="images/sprite.svg#smile"></use>
+                                </svg>
+                                <h3 class="about__item-title">Положительных отзывов</h3>
+                                <p class="about__item-number about__item-number--positive">356</p>
+                            </li>
+                            <li class="about__item">
+                                <svg class="about__item-icon">
+                                    <use xlink:href="images/sprite.svg#sad"></use>
+                                </svg>
+                                <h3 class="about__item-title">Отрицательных отзывов</h3>
+                                <p class="about__item-number about__item-number--negative">0</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
         </section>
         <!--Contacts-->
-            <section class="contacts" id="contacts">
-              <div class="container">
+        <section class="contacts" id="contacts">
+            <div class="container">
                 <h2 class="contacts__title">Наши контакты</h2>
                 <ul class="contacts__list">
-                  <li class="contacts__item"><a class="contacts__item-link" href="mailto:ptseraev@gmail.com">ptseraev@gmail.com</a></li>
-                  <li class="contacts__item"><a class="contacts__item-link" href="tel:+375296816200">+375 29 681 62 00</a></li>
-                  <li class="contacts__item"><a class="contacts__item-link" href="tel:+375447224231">+375 44 722 42 31</a></li>
-                  <li class="contacts__item"><a class="contacts__item-link" href="https://yandex.ru/maps/?um=constructor%3A5f20e6203c6128edc99146fcd6dec8429ec326c3a57851abc291a83163331df5&amp;source=constructorLink" rel="noopener" target="_blank">Беларусь, Минская область, Жодино, Советская улица, 22А</a></li>
+                    <li class="contacts__item"><a class="contacts__item-link" href="mailto:ptseraev@gmail.com">ptseraev@gmail.com</a>
+                    </li>
+                    <li class="contacts__item"><a class="contacts__item-link" href="tel:+375296816200">+375 29 681 62
+                        00</a></li>
+                    <li class="contacts__item"><a class="contacts__item-link" href="tel:+375447224231">+375 44 722 42
+                        31</a></li>
+                    <li class="contacts__item">
+                        <a class="contacts__item-link" href="https://yandex.ru/maps/?um=constructor%3A5f20e6203c6128edc99146fcd6dec8429ec326c3a57851abc291a83163331df5&amp;source=constructorLink" rel="noopener" target="_blank">Беларусь,
+                            Минская область, Жодино, Советская улица, 22А</a></li>
                 </ul>
-              </div>
-            </section>
-      </main>
-      <footer class="footer">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
         <div class="container">
-          <div class="footer__inner">
-            <div class="footer__info">
-              <p>ИП Теряев Павел Иванович УНП691733898 св-во 0728699 выдано Жодинским Исполкомом 24 апреля.</p>
-              <p>Сайт activate.by зарегистрирован в Торговом реестре РБ №494412</p>
-            </div>
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <p>ИП Теряев Павел Иванович УНП691733898 св-во 0728699 выдано Жодинским Исполкомом 24 апреля.</p>
+                    <p>Сайт activate.by зарегистрирован в Торговом реестре РБ №494412</p>
+                </div>
                 <svg class="footer__icon">
-                  <use xlink:href="images/sprite.svg#pay"></use>
+                    <use xlink:href="images/sprite.svg#pay"></use>
                 </svg>
-          </div>
+            </div>
         </div>
-      </footer>
+    </footer>
+</div>
+<div class="cart modal" id="cart">
+    <div class="cart__order">
+        <button class="cart__button-close" aria-label="Закрыть" data-modal-close>
+            <svg class="cart__button-close-icon">
+                <use xlink:href="images/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <h3 class="cart__title">Состав заказа</h3>
+        <ul class="cart__order-list">
+            <li class="cart__order-item">
+                <div class="cart__order-item-info">
+                    <a class="cart__order-item-link" href="product.html" aria-label="Страница товара"></a><img class="cart__order-item-img" src="images/products/kaspersky/kaspersky-1.png" width="80" height="80" alt="">
+                    <h4 class="cart__order-item-title">Kaspersky Total Security (1 год)</h4>
+                </div>
+                <div class="product-counter">
+                    <div class="product-counter__group">
+                        <button class="product-counter__control minus" aria-label="Отнять">-</button>
+                        <p class="product-counter__count count">1</p>
+                        <button class="product-counter__control plus" aria-label="Прибавить">+</button>
+                    </div>
+                    <p class="product-counter__price">53.55 BYN</p>
+                </div>
+            </li>
+            <li class="cart__order-item">
+                <div class="cart__order-item-info">
+                    <a class="cart__order-item-link" href="product.html" aria-label="Страница товара"></a><img class="cart__order-item-img" src="images/products/windows/windows7.png" width="80" height="80" alt="">
+                    <h4 class="cart__order-item-title">Лицензионный ключ активации для Windows 10 Home (Домашняя)</h4>
+                </div>
+                <div class="product-counter">
+                    <div class="product-counter__group">
+                        <button class="product-counter__control minus" aria-label="Отнять">-</button>
+                        <p class="product-counter__count count">1</p>
+                        <button class="product-counter__control plus" aria-label="Прибавить">+</button>
+                    </div>
+                    <p class="product-counter__price">53.55 BYN</p>
+                </div>
+            </li>
+        </ul>
     </div>
-        <div class="cart modal" id="cart">
-          <div class="cart__order">
-            <button class="cart__button-close" aria-label="Закрыть" data-modal-close>
-                  <svg class="cart__button-close-icon">
-                    <use xlink:href="images/sprite.svg#close"></use>
-                  </svg>
-            </button>
-            <h3 class="cart__title">Состав заказа</h3>
-            <ul class="cart__order-list">
-              <li class="cart__order-item">
-                <div class="cart__order-item-info"><a class="cart__order-item-link" href="product.html" aria-label="Страница товара"></a><img class="cart__order-item-img" src="images/products/kaspersky/kaspersky-1.png" width="80" height="80" alt="">
-                  <h4 class="cart__order-item-title">Kaspersky Total Security (1 год)</h4>
-                </div>
-                    <div class="product-counter">
-                      <div class="product-counter__group">
-                        <button class="product-counter__control minus" aria-label="Отнять">-</button>
-                        <p class="product-counter__count count">1</p>
-                        <button class="product-counter__control plus" aria-label="Прибавить">+</button>
-                      </div>
-                      <p class="product-counter__price">53.55 BYN</p>
-                    </div>
-              </li>
-              <li class="cart__order-item">
-                <div class="cart__order-item-info"><a class="cart__order-item-link" href="product.html" aria-label="Страница товара"></a><img class="cart__order-item-img" src="images/products/windows/windows7.png" width="80" height="80" alt="">
-                  <h4 class="cart__order-item-title">Лицензионный ключ активации для Windows 10 Home (Домашняя)</h4>
-                </div>
-                    <div class="product-counter">
-                      <div class="product-counter__group">
-                        <button class="product-counter__control minus" aria-label="Отнять">-</button>
-                        <p class="product-counter__count count">1</p>
-                        <button class="product-counter__control plus" aria-label="Прибавить">+</button>
-                      </div>
-                      <p class="product-counter__price">53.55 BYN</p>
-                    </div>
-              </li>
-            </ul>
-          </div>
-          <div class="cart__total">
-            <h3 class="cart__title cart__title--marginless">Итого</h3>
-            <p class="cart__total-sum" id="cart-price-total">50 BYN</p>
-          </div>
-          <p class="cart__descrip">Вы получите ключи активации СРАЗУ после оплаты в виде сообщения на телефон и электронную почту!</p>
-          <h3 class="cart__title">Контактные данные</h3>
-          <form class="cart__form" id="form-cart" name="Оплата" action="#" method="POST">
-            <div class="cart__form-control"><span class="cart__form-error"></span>
-              <input class="cart__form-input" name="order-phone" type="tel" placeholder="Номер телефона" data-form-phone>
-            </div>
-            <div class="cart__form-control"><span class="cart__form-error"></span>
-              <input class="cart__form-input" name="order-email" type="text" placeholder="e-mail" data-form-email>
-            </div>
-            <button class="cart__form-submit">Оплатить</button>
-          </form>
+    <div class="cart__total">
+        <h3 class="cart__title cart__title--marginless">Итого</h3>
+        <p class="cart__total-sum" id="cart-price-total">50 BYN</p>
+    </div>
+    <p class="cart__descrip">Вы получите ключи активации СРАЗУ после оплаты в виде сообщения на телефон и электронную
+        почту!</p>
+    <h3 class="cart__title">Контактные данные</h3>
+    <form class="cart__form" id="form-cart" name="Оплата" action="#" method="POST">
+        <div class="cart__form-control"><span class="cart__form-error"></span>
+            <input class="cart__form-input" name="order-phone" type="tel" placeholder="Номер телефона" data-form-phone>
         </div>
-    <div class="overlay" id="overlay"></div>
-    <script src="scripts/main.min.js"></script>
-  </body>
+        <div class="cart__form-control"><span class="cart__form-error"></span>
+            <input class="cart__form-input" name="order-email" type="text" placeholder="e-mail" data-form-email>
+        </div>
+        <button class="cart__form-submit">Оплатить</button>
+    </form>
+</div>
+<div class="overlay" id="overlay"></div>
+<script src="scripts/main.min.js"></script>
+</body>
 </html>
