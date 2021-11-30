@@ -124,13 +124,74 @@ $(document).ready(function(){
         }
     })
 
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 10) {
-            $(".header").addClass("scrolled");
-        } else {
-            $(".header").removeClass("scrolled");
+    // $(window).scroll(function () {
+    //     if ($(this).scrollTop() > 10) {
+    //         $(".header").addClass("scrolled");
+    //     } else {
+    //         $(".header").removeClass("scrolled");
+    //     }
+    // });
+
+    !function () {
+        'use strict';
+
+        var oWindow = $(window);
+
+        function setMainPadding() {
+            var header = $('.header');
+            var main = $('body');
+            if (!header.length) {
+                return false;
+            }
+            var position = header.css('position');
+            var headerHeight = header.outerHeight();
+            if (position === 'fixed') {
+                main.css({
+                    'padding-top': headerHeight
+                });
+            } else {
+                main.css({
+                    'padding-top': ''
+                });
+            }
         }
-    });
+
+        var scrollHeader = {
+            init: function () {
+                var header = $('.header');
+                if (!header.length) {
+                    return false;
+                }
+
+                $(window).off('scroll.scrollHeader').on('scroll.scrollHeader', function() {
+                    var headerHeight = header.outerHeight();
+                    var headerPosition = header.offset().top;
+                    if (headerPosition > headerHeight) {
+                        if (!header.hasClass('scrolled')) {
+                            header.addClass('scrolled');
+                            setMainPadding();
+                        }
+                    } else {
+                        header.removeClass('scrolled');
+                        setMainPadding();
+                    }
+                });
+            }
+        };
+
+        $(function () {
+            setMainPadding();
+            scrollHeader.init();
+        });
+
+        oWindow.on('load', function () {
+            setMainPadding();
+        });
+
+        oWindow.on('resize', function () {
+            setMainPadding();
+        });
+    }();
 
     $(document).on("change", ".product_form input[name='product-version']", function(){
         var v = $(this).val();

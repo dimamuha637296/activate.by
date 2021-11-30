@@ -332,7 +332,8 @@ body {
     font: 1.6rem Rubik, sans-serif;
     background: #fff;
     margin: 0;
-    color: #212121
+    color: #212121;
+    position: relative;
 }
 
 .container {
@@ -447,8 +448,13 @@ body {
 
 .header {
     background: #fff;
-    position: relative;
-    padding-top: 10px
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 2;
 }
 
 @media only screen and (max-width: 767.98px) {
