@@ -461,8 +461,6 @@ body {
     .header {
         padding: 10px 0;
         z-index: 10;
-        position: -webkit-sticky;
-        position: sticky;
         top: 0;
         left: 0;
         width: 100%;
@@ -1366,6 +1364,7 @@ body {
     background: #fff;
     color: #212121;
     margin-bottom: 10px;
+    transition: all .3s;
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -1410,7 +1409,7 @@ body {
     background-image: url(../images/index/basket-white.svg);
 }
 
-.thanks__link--white:hover {
+.thanks__link--white:hover .icon:before {
     background-image: url(../images/index/basket-white.svg);
 }
 
