@@ -1337,6 +1337,12 @@
         <h3 class="cart__title">Состав заказа</h3>
         <ul class="cart__order-list">
             <li class="cart__order-item cart__order-item--sale cart__order-item--promo">
+                <button class="cart__order-item-delete">
+                    <svg class="cart__order-item-delete-icon">
+                        <use xlink:href="images/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <div class="cart__order-item-delete"></div>
                 <div class="cart__order-item-info">
                     <a class="cart__order-item-link" href="product.html" aria-label="Страница товара"></a><img class="cart__order-item-img" src="images/products/kaspersky/kaspersky-1.png" width="80" height="80" alt="">
                     <h4 class="cart__order-item-title">Kaspersky Total Security (1 год)</h4>
@@ -1355,6 +1361,11 @@
                 </div>
             </li>
             <li class="cart__order-item">
+                <button class="cart__order-item-delete">
+                    <svg class="cart__order-item-delete-icon">
+                        <use xlink:href="images/sprite.svg#close"></use>
+                    </svg>
+                </button>
                 <div class="cart__order-item-info">
                     <a class="cart__order-item-link" href="product.html" aria-label="Страница товара"></a><img class="cart__order-item-img" src="images/products/windows/windows7.png" width="80" height="80" alt="">
                     <h4 class="cart__order-item-title">Лицензионный ключ активации для Windows 10 Home (Домашняя)</h4>
@@ -1373,6 +1384,11 @@
                 </div>
             </li>
             <li class="cart__order-item">
+                <button class="cart__order-item-delete">
+                    <svg class="cart__order-item-delete-icon">
+                        <use xlink:href="images/sprite.svg#close"></use>
+                    </svg>
+                </button>
                 <div class="cart__order-item-info">
                     <a class="cart__order-item-link" href="product.html" aria-label="Страница товара"></a><img class="cart__order-item-img" src="images/products/windows/windows7.png" width="80" height="80" alt="">
                     <h4 class="cart__order-item-title">Лицензионный ключ активации для Windows 10 Home (Домашняя)</h4>
@@ -1397,111 +1413,7 @@
             <div class="cart__form-input-wrap">
                 <input type="text" class="cart__form-input" placeholder="Введите промокод">
             </div>
-            <button class="cart__btn">применить</button>
-        </div>
-        <div class="cart__total">
-            <h3 class="cart__title cart__title--marginless">Итого</h3>
-            <div class="cart__total-sum" id="cart-price-total">
-                <p class="cart__total-sum-usual">50 BYN</p>
-                <p class="cart__total-sum-sale">50 BYN</p>
-            </div>
-        </div>
-    </div>
-    <div class="cart__type">
-        <h3 class="cart__title cart__title--mr-0">Выберете вариант оплаты</h3>
-        <div class="radio-block">
-            <div class="radio-wrap">
-                <input type="radio" id="paytype1" name="paytype">
-                <label class="radio-checkbox-label" for="paytype1">Карта</label>
-            </div>
-            <div class="radio-wrap">
-                <input type="radio" id="paytype2" name="paytype">
-                <label class="radio-checkbox-label" for="paytype2">ЕРИП</label>
-            </div>
-        </div>
-    </div>
-    <p class="cart__descrip">Вы получите ключи активации СРАЗУ после оплаты в виде сообщения на телефон и электронную
-        почту!</p>
-    <h3 class="cart__title">Контактные данные</h3>
-    <form class="cart__form" id="form-cart" name="Оплата" action="#" method="POST">
-        <div class="cart__form-control"><span class="cart__form-error"></span>
-            <input class="cart__form-input" name="order-phone" type="tel" placeholder="Номер телефона" data-form-phone>
-        </div>
-        <div class="cart__form-control"><span class="cart__form-error"></span>
-            <input class="cart__form-input" name="order-email" type="text" placeholder="e-mail" data-form-email>
-        </div>
-        <button class="cart__form-submit">Оплатить</button>
-    </form>
-</div>
-<div class="cart modal" id="cart2">
-    <div class="cart__order">
-        <button class="cart__button-close" aria-label="Закрыть" data-modal-close>
-            <svg class="cart__button-close-icon">
-                <use xlink:href="images/sprite.svg#close"></use>
-            </svg>
-        </button>
-        <h3 class="cart__title">Состав заказа</h3>
-        <ul class="cart__order-list">
-            <li class="cart__order-item cart__order-item--sale cart__order-item--promo">
-                <div class="cart__order-item-info">
-                    <a class="cart__order-item-link" href="product.html" aria-label="Страница товара"></a><img class="cart__order-item-img" src="images/products/kaspersky/kaspersky-1.png" width="80" height="80" alt="">
-                    <h4 class="cart__order-item-title">Kaspersky Total Security (1 год)</h4>
-                </div>
-                <div class="product-counter">
-                    <div class="product-counter__group">
-                        <button class="product-counter__control minus" aria-label="Отнять">-</button>
-                        <p class="product-counter__count count">1</p>
-                        <button class="product-counter__control plus" aria-label="Прибавить">+</button>
-                    </div>
-                    <div class="product-counter__price">
-                        <p class="product-counter__price-promo">Скидка по промокоду</p>
-                        <p class="product-counter__price-usual">53.55 BYN</p>
-                        <p class="product-counter__price-sale">53.55 BYN</p>
-                    </div>
-                </div>
-            </li>
-            <li class="cart__order-item">
-                <div class="cart__order-item-info">
-                    <a class="cart__order-item-link" href="product.html" aria-label="Страница товара"></a><img class="cart__order-item-img" src="images/products/windows/windows7.png" width="80" height="80" alt="">
-                    <h4 class="cart__order-item-title">Лицензионный ключ активации для Windows 10 Home (Домашняя)</h4>
-                </div>
-                <div class="product-counter">
-                    <div class="product-counter__group">
-                        <button class="product-counter__control minus" aria-label="Отнять">-</button>
-                        <p class="product-counter__count count">1</p>
-                        <button class="product-counter__control plus" aria-label="Прибавить">+</button>
-                    </div>
-                    <div class="product-counter__price">
-                        <p class="product-counter__price-promo">Скидка по промокоду</p>
-                        <p class="product-counter__price-usual">53.55 BYN</p>
-                        <p class="product-counter__price-sale">53.55 BYN</p>
-                    </div>
-                </div>
-            </li>
-            <li class="cart__order-item">
-                <div class="cart__order-item-info">
-                    <a class="cart__order-item-link" href="product.html" aria-label="Страница товара"></a><img class="cart__order-item-img" src="images/products/windows/windows7.png" width="80" height="80" alt="">
-                    <h4 class="cart__order-item-title">Лицензионный ключ активации для Windows 10 Home (Домашняя)</h4>
-                </div>
-                <div class="product-counter">
-                    <div class="product-counter__group">
-                        <button class="product-counter__control minus" aria-label="Отнять">-</button>
-                        <p class="product-counter__count count">1</p>
-                        <button class="product-counter__control plus" aria-label="Прибавить">+</button>
-                    </div>
-                    <div class="product-counter__price">
-                        <p class="product-counter__price-promo">Скидка по промокоду</p>
-                        <p class="product-counter__price-usual">53.55 BYN</p>
-                        <p class="product-counter__price-sale">53.55 BYN</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="cart__total-wrap">
-        <div class="cart__addPromo">
-            <button class="cart__btn">применить</button>
-            <p class="cart__promo-success">Применен промокод: 1010</p>
+            <button class="cart__btn" id="cart-promo">применить</button>
         </div>
         <div class="cart__total">
             <h3 class="cart__title cart__title--marginless">Итого</h3>
@@ -1622,6 +1534,18 @@
     $(document).on("click", '#toCatalog', function (e) {
         $('#thanks').removeClass('active');
         $('#cart').addClass('active');
+    })
+</script>
+<script>
+    $(document).on("click", '.cart__order-item-delete', function (e) {
+        $(this).closest('.cart__order-item').remove();
+    })
+</script>
+<script>
+    $(document).on("click", '#cart-promo', function (e) {
+        $(this).text('вам скидка!').attr('disabled', 'true');
+        $(this).closest('.cart__addPromo').find('.cart__form-input-wrap').remove();
+        $(this).closest('.cart__addPromo').append('<p class="cart__promo-success">Применен промокод: 1010</p>');
     })
 </script>
 </body>

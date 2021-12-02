@@ -1569,7 +1569,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding: 2rem;
+    padding: 20px 30px 20px 20px;
     border: 1px solid #e5e7ef;
     box-shadow: 0 5px 8px rgba(82, 82, 82, .07);
     border-radius: 4px
@@ -1583,6 +1583,18 @@ body {
     .cart__order-item {
         flex-direction: column
     }
+}
+
+.cart__order-item-delete {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.cart__order-item-delete-icon {
+    width: 16px;
+    height: 16px;
 }
 
 .cart__order-item-link {
